@@ -1,0 +1,57 @@
+Sneha Baniya
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub - Manage Events</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <section id="register" class="container my-5">
+        <h2 class="text-center">Register for an Event</h2>
+        <form id="eventForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="event">Select Event</label>
+                <select class="form-control" id="event">
+                    <option>Tech Conference 2025</option>
+                    <option>Business Summit</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </section>
+    
+    <section id="events" class="container my-5">
+        <h2 class="text-center">Events</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Event</th>
+                </tr>
+            </thead>
+            <tbody id="eventList">
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+    </section>
+    
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
